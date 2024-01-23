@@ -1,0 +1,86 @@
+body{
+    background: linear-gradient(90deg, rgba(20,22,89,1) 0%, rgba(161,23,155,1) 100%);
+    box-sizing: border-box;
+}
+.container{
+    width: 90%;
+    max-width: 500px;
+    margin: 100px auto 0px;
+    color: rgb(58, 58, 58);
+    border-radius: 25px;
+    padding: 25px 35px;
+    background-color: white;
+}
+.container .head{
+    display: flex;
+    align-items: center;
+
+}
+
+.container .head h1{
+    font-size: 25px;
+    margin-left: 20px;
+}
+.container .head img{
+    width: 40px;
+    height: 50px;
+}
+
+
+
+.container .addMenu{
+    width: 90%;
+    display: flex;
+    margin:auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: #cccccc;
+    justify-content: space-between;
+    border-radius: 40px;
+
+}
+.container .addMenu input{
+    padding-left:30px ;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+.container .addMenu button{
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 50px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    background-color:orangered ;
+}
+
+.container .addMenu button:hover{
+    background-color: black;
+    color: orangered;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding:12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(icons/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
