@@ -5,6 +5,7 @@ body{
 .container{
     width: 90%;
     max-width: 500px;
+    min-height: 50%;
     margin: 100px auto 0px;
     color: rgb(58, 58, 58);
     border-radius: 25px;
@@ -70,17 +71,21 @@ body{
     padding:12px 8px 12px 50px;
     user-select: none;
     cursor: pointer;
+    position: relative;
 }
 
-.container .listing ul li::before{
-    content: '';
-    position: absolute;
+.container .listing ul li::before {
+    background-image: url(icons/unchecked.png);
     height: 28px;
+    position: absolute;
     width: 28px;
     border-radius: 50%;
-    background-image: url(icons/unchecked.png);
+    content: '';
     background-size: cover;
     background-position: center;
     top: 12px;
     left: 8px;
+}
+ul li::after {
+    background-image: url(icons/checked.png);
 }
