@@ -1,38 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="normalize.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="normalize.css" />
     <title>Doneit - Think, do, thrive.</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="head">
-            <img src="icons/todoIcon.png" alt="To-Do Icon">
-            <h1>To-Do Lists ✏️</h1>  
-        </div>
+      <div class="head">
+        <img src="icons/todoIcon.png" alt="To-Do Icon" />
+        <h1>To-Do Lists ✏️</h1>
+      </div>
 
+      <div class="addMenu">
+        <input type="text" id="inputTask" placeholder="Add your Task" />
+        <button id="addButton">
+          <h2>Add</h2>
+        </button>
+      </div>
 
-        <div class="addMenu">
-            <input type="text" id="inputTask" placeholder="Add your Task">
-            <button id="addButton">
-                <h2>Add</h2>
-            </button>
-        </div>
-        
-        <div class="listing">
-            <ul id="todoList">
-                <!-- <li class="checked">Task1</li>
+      <div class="listing">
+        <ul id="todoList">
+          <!-- <li class="checked">Task1</li>
                 <li>Task2</li>
                 <li>Task3</li> -->
-            </ul>
-        </div>
-        <div class="clearAll">
-            <img src="icons/tool.png">
-        </div>
+        </ul>
+      </div>
+      <div id="clearAll" class="clearAll">
+        <img src="icons/tool.png" />
+      </div>
     </div>
     <script src="scripts.js"></script>
-</body>
+  </body>
 </html>
