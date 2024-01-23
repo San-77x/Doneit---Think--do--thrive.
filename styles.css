@@ -64,7 +64,7 @@ body{
     color: orangered;
 }
 
-ul li{
+.container .listing ul li{
     list-style: none;
     font-size: 17px;
     padding:12px 8px 12px 50px;
@@ -72,7 +72,7 @@ ul li{
     cursor: pointer;
 }
 
-ul li::before{
+.container .listing ul li::before{
     content: '';
     position: absolute;
     height: 28px;
