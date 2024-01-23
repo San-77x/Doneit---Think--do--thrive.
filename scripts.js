@@ -16,6 +16,7 @@ button.onclick = () => {
             li.appendChild(span);
         }
     inputBox.value = "";
+    saveData();
     }
     listing.addEventListener("click", function(e){
         if(e.target.tagName === "li"){
@@ -23,12 +24,22 @@ button.onclick = () => {
         }
         else if(e.target.tagName === "span"){
             e.target.parentElement.remove();
+            saveData();
         } 
     },false);
+    function saveData(){
+        localStorage.setItem("data", listing.innerHTML);
 
-
-
+    }
+    function showTask(){
+        listing.innerHTML = localStorage.getItem("data");
+    }
+    showTask();
     
+
+
+
+
 // clearbtn.onclick = () => {
 //     if(listing.value=== "")
 //         alert("You Must Add a task first");
