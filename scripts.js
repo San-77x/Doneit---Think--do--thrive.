@@ -17,6 +17,14 @@ button.onclick = () => {
         }
         return inputBox.value = ""
     }
+    listing.addEventListener("click", function(e){
+        if(e.target.tagName === "li"){
+            e.target.classList.toggle("checked")
+        }
+        else if(e.target.tagName === "span"){
+            e.target.parentElement.remove();
+        } 
+    },false);
 // clearbtn.onclick = () => {
 //     if(listing.value=== "")
 //         alert("You Must Add a task first");
